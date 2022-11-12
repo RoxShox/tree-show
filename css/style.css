@@ -4551,6 +4551,12 @@ input#pay-4 {
 		width: 30%;
 	}
 }
+.pages {
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	padding: 50px 100px;
+}
 
 @media screen and (max-width: 1100px) {
 	.assortment__date input {
