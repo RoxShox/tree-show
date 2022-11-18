@@ -1516,8 +1516,6 @@ button.btn-green {
 	color: #fff;
 	width: 290px;
 	max-width: 100%;
-	text-align: center;
-	margin-right: 60px;
 }
 .footer__top-right {
 	width: calc(100% - 290px);
@@ -2256,6 +2254,7 @@ button.btn-green {
 .tabs__menu {
 	border-bottom: 1px solid #347684;
 }
+
 .tabs__menu a {
 	padding: 28px 20px;
 	margin-right: 75px;
@@ -2602,6 +2601,10 @@ button.btn-green {
 	position: relative;
 	height: 185px;
 	margin-bottom: 8px;
+}
+.tabs__menu-wrap {
+	overflow-x: scroll;
+	width: 100%;
 }
 .sesingle__gallery-item img {
 	position: absolute;
@@ -4551,6 +4554,20 @@ input#pay-4 {
 		width: 30%;
 	}
 }
+@media screen and (max-width: 1200px) {
+	.footer__top-right {
+		padding-right: 0;
+	}
+	.footer__bottom-item:not(:last-child) {
+		margin-right: 0 !important;
+	}
+	.footer__bottom {
+		justify-content: space-between;
+	}
+	.footer__bottom-item--socials {
+		margin-right: 0 !important;
+	}
+}
 .pages {
 	display: flex;
 	flex-direction: column;
@@ -4828,7 +4845,9 @@ input#pay-4 {
 	.blog-s__text .blog-s__image {
 		float: initial;
 	}
-
+	.footer__bottom-link {
+		font-size: 20px;
+	}
 	.subheader__buttons {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
@@ -5199,15 +5218,44 @@ input#pay-4 {
 	}
 }
 
+@media screen and (min-width: 767px) {
+	.header-mobile__link-profile {
+		display: none;
+	}
+	.header-mobile__fav {
+		display: none;
+	}
+}
 @media screen and (max-width: 767px) {
 	.subheader__menu {
 		display: none;
 	}
+
 	.header__last {
 		display: none;
 	}
+	.tabs__menu {
+		width: 600px;
+	}
+	.footer__bottom {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
 	.select-card-delivery {
 		width: 100%;
+	}
+	.footer__bottom-item:not(:last-child) .footer__bottom-title {
+		display: none;
+	}
+	.footer__bottom-item--socials {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		margin-top: 60px;
+	}
+	.footer__bottom-item {
+		margin-bottom: 23px;
 	}
 	.header__city,
 	.header__buttons,
@@ -5621,9 +5669,6 @@ input#pay-4 {
 		line-height: 18px;
 	}
 
-	.tabs__menu {
-		overflow-y: auto;
-	}
 	.tabs__menu a {
 		font-size: 14px;
 		line-height: 16px;
@@ -5696,6 +5741,14 @@ input#pay-4 {
 
 	.header__mmenu {
 		display: block;
+		margin-right: 44px;
+	}
+	.header-mobile__link-block {
+		display: flex;
+		margin-left: auto;
+		max-width: 160px;
+		width: 100%;
+		justify-content: space-between;
 	}
 	.header__mmenu span {
 		display: block;
@@ -5822,6 +5875,15 @@ input#pay-4 {
 
 	.header__mmenu {
 		display: block;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.header__buttons-button {
+		display: none;
+	}
+	.header-mobile__link-block {
+		max-width: 110px;
 	}
 }
 
