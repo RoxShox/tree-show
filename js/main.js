@@ -475,3 +475,86 @@ $('.dropdown-menu li').click(function () {
 		msg = '<span class="msg">Hidden input value: '
 	$('.msg').html(msg + input + '</span>')
 })
+
+// input check
+try {
+	const radioInput = document.querySelector('.order__input-check'),
+		rowLabelStar = document.querySelectorAll('.order__row-label-change')
+
+	radioInput.addEventListener('change', () => {
+		// console.log(radioInput.checked)
+		rowLabelStar.forEach(item => {
+			if (radioInput.checked) {
+				item.style.display = 'none'
+			} else {
+				item.style.display = 'block'
+			}
+		})
+	})
+} catch (e) {
+	console.log(e)
+}
+// input pick just one
+$('input:checkbox').on('click', function () {
+	// in the handler, 'this' refers to the box clicked on
+	var $box = $(this)
+	// console.log($box)
+	if ($box.is(':checked')) {
+		// the name of the box is retrieved using the .attr() method
+		// as it is assumed and expected to be immutable
+		var group = "input:checkbox[name='" + $box.attr('name') + "']"
+		// the checked state of the group/box on the other hand will change
+		// and the current value is retrieved using .prop() method
+		$(group).prop('checked', false)
+		$($box).prop('checked', true)
+	} else {
+		$box.prop('checked', false)
+	}
+	console.log($box.is(':checked'))
+})
+
+// add services in cart-item
+
+try {
+	const btnCollection = document.querySelector('.cart-item__btn-wrap[data="1"]')
+	const wrapServicesText = document.querySelector('.cart-item__body-wrap[data="1"]')
+	const btnCollection2 = document.querySelector('.cart-item__btn-wrap[data="2"]')
+	const wrapServicesText2 = document.querySelector('.cart-item__body-wrap[data="2"]')
+	const btnCollection3 = document.querySelector('.cart-item__btn-wrap[data="3"]')
+	const wrapServicesText3 = document.querySelector('.cart-item__body-wrap[data="3"]')
+	const textPlug = document.querySelectorAll('.cart__item-delete')
+	// console.log(btnCollection2)
+
+	// console.log((textPlug[0].style.display = 'none'))
+	function addServicesText(e, wrap, num) {
+		const p = document.createElement('p')
+		p.innerHTML = e.target.innerHTML
+		p.classList.add('cart-item__title')
+		textPlug[num].style.display = 'none'
+		const children = wrap.children
+		if (children) {
+			for (let i = 0; i < children.length; i++) {
+				if (children[i].innerHTML === p.innerHTML) {
+					return
+				}
+			}
+		}
+		wrap.appendChild(p)
+	}
+	btnCollection.addEventListener('click', (e, i) => {
+		const num = +btnCollection.getAttribute('data') - 1
+		console.log(num)
+		addServicesText(e, wrapServicesText, num)
+	})
+	btnCollection2.addEventListener('click', (e, i) => {
+		const num = +btnCollection2.getAttribute('data') - 1
+		console.log(num)
+		addServicesText(e, wrapServicesText2, num)
+	})
+	btnCollection3.addEventListener('click', (e, i) => {
+		const num = +btnCollection3.getAttribute('data') - 1
+		addServicesText(e, wrapServicesText3, num)
+	})
+} catch (e) {
+	console.log(e)
+}
