@@ -854,8 +854,9 @@ button.btn-green {
 }
 .catalog-item__comparison {
 	text-align: center;
-	margin-top: 14px;
+	margin-top: 47px;
 	position: relative;
+	right: 12px;
 	cursor: pointer;
 }
 .catalog-item__comparison span {
@@ -3842,6 +3843,7 @@ input#pay-4 {
 	width: 264px;
 	max-width: 100%;
 	background: #519938;
+	font-weight: 500;
 }
 .promokod__wrapper {
 	display: flex;
@@ -4196,6 +4198,84 @@ input#pay-4 {
 .scroll {
 	overflow-y: scroll;
 }
+.gallery__title-search-inner{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 86px;
+}
+.gallery__search-form{
+	display: flex;
+	max-width: 450px;
+	width: 100%;
+}
+.cart__mobile-item-content-quantity{
+	display: flex;
+	margin-left: 11px;
+	column-gap: 31px;
+}
+.cart__mobile-item-content-quantity span{
+	font-family: 'Gotham Pro';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 15px;
+	color: #000000;
+}
+.gallery__title{
+	font-family: 'Frutiger Neue LT W1G';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	letter-spacing: 0.005em;
+
+	color: #0C0C0C;
+}
+.gallery__title span{
+	color: #519938;
+	font-weight: 300;
+}
+.gallery__search-form-input{
+	max-width: 396px;
+	width: 100%;
+	height: 46px;
+	background: #F9F9F9;
+	border-radius: 4px 0px 0px 4px;
+	font-family: 'Frutiger Neue LT W1G';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.005em;
+	padding: 0 20px;
+	border: none;
+	color: #8F8F8F;
+}
+.gallery__search-form-btn{
+	width: 53px;
+	height: 46px;
+	background: #519938;
+	border-radius: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+}
+.gallery__search-form-input::placeholder {
+
+	font-family: 'Frutiger Neue LT W1G';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.005em;
+
+	color: #8F8F8F;
+}
+.comparsion__overflow + .comparsion__overflow{
+	margin-top: 33px;
+}
 .scroll::-webkit-scrollbar {
 	width: 12px;
 	background-color: #fcfcfc;
@@ -4407,6 +4487,30 @@ input#pay-4 {
 	border-radius: 8px;
 	background: #e23f3f;
 }
+
+.order-block__main-textarea{
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 19.1742px;
+	line-height: 22px;
+	color: #9D9D9D;
+	width: 100%;
+	resize: none;
+	border: none;
+	outline: none;
+	border-bottom: 0.958712px solid #CECECE;
+	height: 40px;
+}
+.order-block__main-textarea::placeholder{
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 19.1742px;
+	line-height: 22px;
+
+	color: #9D9D9D;
+}
 .popup-region__buttons a:last-child {
 	margin-right: 0;
 	background: #0e774b;
@@ -4513,7 +4617,7 @@ input#pay-4 {
 	font-weight: 500;
 }
 .comparsion__body {
-	height: 530px;
+	height: 225px;
 	overflow-y: scroll;
 	padding-bottom: 26px;
 }
@@ -4594,6 +4698,69 @@ input#pay-4 {
 	top: 0;
 	right: 7px;
 }
+.about-tree{
+	margin-bottom: 100px;
+}
+.about-tree__inner{
+	margin-bottom: 80px;
+}
+.about-tree__content{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+	column-gap: 20px;
+}
+.about-tree__image {
+max-width: 441px;
+width: 100%;
+}
+.about-tree__text-date{
+	font-family: 'Frutiger Neue LT W1G';
+	display: inline-block;
+	margin-top: 10px;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 18px;
+	letter-spacing: 0.005em;
+	margin-bottom: 31px;
+	color: #5B5B5B;
+}
+.about-tree__text-title{
+	font-family: 'Frutiger Neue LT W1G';
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 43px;
+	letter-spacing: 0.005em;
+	color: #3F3F3F;
+	margin-bottom: 15px;
+
+}
+.about-tree__text-tag{
+margin-bottom: 35px;
+}
+.about-tree__text-tag span{
+	font-family: 'Frutiger Neue LT W1G';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: 0.005em;
+	color: #B0B0B0;
+	margin-bottom: 35px;
+}
+.about-tree__text-descr{
+	font-family: 'Frutiger Neue LT W1G';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 29px;
+	letter-spacing: 0.005em;
+	color: #141414;
+}
+.about-tree__text-wrap{
+	max-width: 928px;
+	width: 100%;
+}
 .comparsion__product-buttons a:hover {
 	background: #0e774b;
 }
@@ -4608,16 +4775,361 @@ input#pay-4 {
 .subheader__cart._header {
 	display: none;
 }
+.articles__comments-block-title-wrap{
+background: #FBFBFB;
+padding: 25px 35px 21px;
+}
+.articles__comments-block-title{
+	font-family: 'Frutiger Neue LT W1G';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+	letter-spacing: 0.005em;
+	color: #0C0C0C;
+}
+.articles__comments-block-wrapp{
+	background: #F5F5F5;
+	border-radius: 0px 0px 7px 7px;
+	
 
+}
+.articles__comments-block-item-scroll{
+	padding: 27px 47px 0 60px;
+	overflow-y: scroll;
+	height: 400px;
+	margin-bottom: 27px;
+	
+}
+.articles__comments-block-item-scroll:-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 7px;
+	background: #D2D2D2;
+}
+.articles__comments-block-item-scroll::-webkit-scrollbar {
+	width: 19px;
+	
+}
+.articles__comments-block-item-scroll::-webkit-scrollbar-thumb {
+	border-radius: 7px;
+	background: #D2D2D2;
+}
+.articles__comments-block-form-input{
+	background: #F9F9F9;
+	border-radius: 4px 0px 0px 4px;
+	font-family: 'Frutiger Neue LT W1G';
+	font-style: normal;
+	font-weight: 300;
+	width: calc(100% - 144px);
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.005em;
+	height: 46px;
+	margin-right: 16px;
+	border: none;
+	padding: 0 22px;
+	outline: none;
+	color: #8F8F8F;
+}
+.articles__comments-block-form-btn{
+	width: 155px;
+	height: 46px;
+	background: #519938;
+	border-radius: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Frutiger Neue LT W1G';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.005em;
+	border: none;
+	color: #FFFFFF;
+}
+.about-tree{
+	padding-top: 25px;
+}
+.articles__comments-block-form-input::placeholder {
+	font-family: 'Frutiger Neue LT W1G';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.005em;
+	color: #8F8F8F;
+}
+.articles__comments-block-item + .articles__comments-block-item{
+	margin-top: 62px;
+}
+.articles__comments-block-item-person-img{
+	height: 35px;
+	width: 35px;
+}
+.articles__comments-block-item-person-img img{
+	border-radius: 100%;
+}
+.articles__comments-block-item-person-name{
+	font-family: 'Frutiger Neue LT W1G';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+
+	letter-spacing: 0.005em;
+	color: #FFFFFF;
+}
+.articles__comments-block-item-person-descr{
+	margin-bottom: 20px;
+}
+
+.articles__comments-block-item-person-descr , .articles__comments-block-item-person-date{
+	font-family: 'Frutiger Neue LT W1G';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 134%;
+
+	letter-spacing: 0.005em;
+	color: #141414;
+}
+.articles__comments-block-item-person{
+	max-width: 144px;
+	width: 100%;
+	height: 46px;
+	background: #519938;
+	border-radius: 3px;
+	display: flex;
+	 column-gap: 13px;
+	align-items: center;
+	margin-bottom: 19px;
+	padding: 0 24px 0 15px;
+}
+
+.articles__comments-block-form{
+	background: #EEEEEE;
+	border-radius: 7px;
+	padding: 21px 47px 21px 60px;
+	display: flex;
+}
 .blog-s__text .blog-s__image {
 	border-radius: 7px;
 	float: left;
 	margin-right: 20px;
 	margin-bottom: 20px;
 }
+.gallerys{position: relative;}
+.gallery-main{
+	padding: 25px 0px 0px 0px ;
+}
+.gallery__photo-item {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(3, 256px);
+	gap: 9px;
+
+}
+.gallery__photo-slider {
+	position: relative;
+	max-width: 1420px;
+	width: 100%;
+	margin: 0 auto 47px;
+}
+.gallery__photo {
+	width: 100%;
+}
+
+.gallery__photo img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.gallery__photo:nth-child(1) {
+	grid-column: span 2;
+}
+
+.gallery__photo:nth-child(2) {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+.gallery__photo:nth-child(3) {
+	grid-column: span 2;
+}
+
+.gallery__photo:nth-child(4) {
+	grid-column: span 2;
+}
+
+.gallery__photo:nth-child(5) {
+	grid-column: span 1;
+}
+
+.gallery__photo:nth-child(6) {
+	grid-column: span 1;
+}
+
+.gallery__photo:nth-child(7) {
+	grid-column: span 2;
+}
+
+.gallery__photo:nth-child(8) {
+	grid-column: span 2;
+}
+
+.gallery__photo:nth-child(9) {
+	grid-column: span 2;
+}
+.gallery .slick-dots {
+	position: absolute;
+	top: 5px;
+	left: -65px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.gallery .slick-dots li+li{
+	padding-left: 0;
+}
+.gallery .slick-dots li button {
+	font-size: 0;
+	width: 29px;
+	height: 29px;
+	background: #e8e8e8;
+	border-radius: 2px;
+	margin-bottom: 16px;
+}
+.gallery .slick-dots li {
+	height: auto;
+}
+.gallery .slick-dots li.slick-active button{
+	width: 35px;
+	height: 35px;
+	background: #E23F3F;
+}
+.gallery__video-inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+	-webkit-column-gap: 15px;
+	-moz-column-gap: 15px;
+	column-gap: 15px;
+}
+.gallery__video-slider{
+	position: relative;
+	max-width: 1420px;
+	width: 100%;
+	margin: 0 auto;
+}
+.gallery__video-bg{
+	background: #F7F8F9;
+	padding: 33px 0px 37px;
+	width: 100%;
+}
+.gallery__video-item{
+	position: relative;
+}
+.gallery__video-item::after {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.25);
+	border-radius: 7px;
+	width: 100%;
+	height: 100%;
+}
+.gallery__video-item {
+	position: relative;
+}
+.gallery__video{
+	height: 100%;
+}
+.gallery__video-popup {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.gallery .slick-dots {
+	position: absolute;
+	left: -65px;
+	top: 5px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.gallery__title-video{
+	width: 1409px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.gallery-tabs__items{
+	display: flex;
+	max-width: 1202px;
+	justify-content: center;
+	width: 100%;
+	border-bottom: 2px solid #eeeeee;
+	margin: 0 auto 46px;
+	
+}
+.gallery-tabs__item-active{
+	border-bottom: 4px solid #519938;
+	
+}
+.gallery-tabs__item{
+	font-family: 'Frutiger Neue LT W1G';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 0.005em;
+	color: #555555;
+	padding: 0 82px;
+	padding-bottom: 20px;
+	margin-bottom: -2px;
+}
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-duration: 1.5s;
+}
 
 /* Media */
 @media screen and (max-width: 1441px) {
+	.about-tree .container{
+		width: 1420px;
+	}
 	.container {
 		width: 1300px;
 	}
@@ -4685,7 +5197,15 @@ input#pay-4 {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-
+	.about-tree__content{
+		flex-direction: column;
+	}
+	.about-tree__image{
+		margin: 0 auto;
+	}
+	.about-tree__text-descr{
+		font-size: 18px;
+	}
 	.header__menu li a {
 		font-size: 14px;
 		line-height: 17px;
@@ -4935,6 +5455,12 @@ input#pay-4 {
 		min-width: calc(100% - 199px);
 	}
 }
+@media screen and (min-width: 992px){
+	.order-menu__mobile-doc-btn{
+		display: none;
+	}
+}
+
 
 @media screen and (max-width: 992px) {
 	.blog-s__text .blog-s__image {
@@ -5129,12 +5655,37 @@ input#pay-4 {
 	.order__content {
 		width: 100%;
 	}
+	.order-menu__mobile-doc-btn{
+		display: flex;
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 291px;
+		width: 100%;
+		height: 57px;
+		background: #519938;
+		border-radius: 8px;
+		justify-content: center;
+		align-items: center;
+		font-family: 'Gotham Pro', sans-serif;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 114.2%;
+		color: #FFFFFF;
+		border:none;
+		margin-top: 27px;
+		margin-bottom: 65px;
+	}
 	.order-menu {
 		width: 100%;
 		padding-left: 0;
 		margin-top: 40px;
+		display: flex;
+		flex-direction: column-reverse;
 	}
-
+	.dropdown{
+		display: none;
+	}
 	.form-row label {
 		font-size: 14px;
 	}
@@ -5244,6 +5795,7 @@ input#pay-4 {
 	}
 	.order-menu__button._mobile {
 		display: block;
+
 	}
 
 	.order-code input {
@@ -5323,12 +5875,100 @@ input#pay-4 {
 	.header-mobile__fav {
 		display: none;
 	}
+	.cart__mobile{
+		display: none;
+	}
 }
 @media screen and (max-width: 767px) {
+	.cart{
+		display: none;
+	}
+	.about-tree__text-title{
+		max-width: 500px;
+	}
+	.assortment__date{
+		display: none;
+
+	}
+	.assortment__date input{
+		display: none;
+	}
+	.order-menu__button._mobile {
+		max-width: 264px;
+		width: 100%;
+		background-color: #000000;;
+	}
+	.order-block__textarea-wrap{
+		display: none;
+	}
+	.cart__mobile-item-content{
+		margin-bottom: 29px;
+	}
+	.cart__mobile-item-content-num{
+		display: flex;
+		flex-direction: column;
+		row-gap: 14px;
+	}
+	.cart__mobile-item + .cart__mobile-item{
+		margin-top: 22px;
+	}
+	.cart__mobile{
+		margin-bottom: 71px;
+	}
+	.promokod__wrapper{
+		display: none;
+	}
+	.cart__mobile-main-title{
+		font-family: 'Gotham Pro';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 112.7%;
+		text-transform: uppercase;
+		color: #000000;
+	}
+	.cart__mobile-item-content-price-num{
+		font-family: 'Gotham Pro';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 15px;
+		color: #000000;
+	}
+	.cart__mobile-item-content-title, .cart__mobile-item-content-price-title{
+		font-family: 'Gotham Pro';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 10px;
+	color: #7C7C7C;
+
+	}
 	.subheader__menu {
 		display: none;
 	}
+	.cart__mobile{
+		display: block;
+	}
+	.cart__mobile-item-content-price{
+		display: flex;
+		flex-direction: column;
+		row-gap: 14px;
+	}
+	.cart__mobile-item-content{
+		display: flex;
+		justify-content: space-between;
+	}
+	.cart__mobile-item-content-close {
+		margin-top: -4px;
+	}
+	.cart__mobile-item{
+		border: 1px solid #E1E1E1;
+		border-radius: 7px;
+		padding: 16px 12px 13px 20px;
+	}
 	.order__row.order__checkbox {
+		display: none;
 	}
 	.order__checkbox input + label:after {
 		top: -7px;
@@ -6009,11 +6649,42 @@ input#pay-4 {
 		font-size: 26px;
 		max-width: 284px;
 	}
+	.articles__comments-block-form {
+		
+		padding: 21px 17px 21px 60px;
+	
+	}
+	.articles__comments-block-form-input{
+		padding: 0 5px;
+		width: calc(100% - 100px);
+		margin-right: 10px;
+	}
 	.blog-s__content {
 		padding: 20px 10px 25px 14px;
 	}
 	.blog-s-descr {
 		font-size: 16px;
+	}
+	.articles__comments-block-form-input::placeholder {
+		font-size: 13px;
+	}
+	.articles__comments-block-form-input{
+			font-size: 13px;
+			
+	}
+	.articles__comments-block-form-btn{
+		font-size: 13px;
+		max-width: 100px;
+	}
+	.articles__comments-block-item-scroll{
+		padding: 27px 20px 0 20px;
+	}
+	.articles__comments-block-form{
+
+		padding: 21px 17px 21px 20px;
+	}
+	.articles__comments-block-form{
+		justify-content: space-between;
 	}
 }
 @media screen and (max-width: 550px) {
@@ -6028,6 +6699,13 @@ input#pay-4 {
 @media screen and (max-width: 500px) {
 	.promokod__wrapper {
 		align-items: normal;
+	}
+	.about-tree__text-title{
+		font-size: 26px;
+	}
+	.about-tree__text-descr{
+		font-size: 16px;
+		line-height: 19px;
 	}
 }
 
