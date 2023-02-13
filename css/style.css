@@ -1366,6 +1366,9 @@ button.btn-green {
 	color: #fff;
 	margin-bottom: 5px;
 }
+.blog .arsingle__header-cats{
+	margin-top: 25px;
+}
 
 .text__content {
 	border-radius: 7px;
@@ -2970,6 +2973,27 @@ button.btn-green {
 	line-height: 18px;
 	margin-bottom: 31px;
 	font-weight: 300;
+}
+.order__block-show{
+	opacity: 1;
+	transition: all .3s;
+	height: max-content;
+	width: 100%;
+}
+.blog-item__date{
+	font-family: 'Frutiger Neue LT W1G';
+
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 18px;
+	letter-spacing: 0.005em;
+	color: #F2F2F2;
+}
+.order__block-fade {
+	height: 0;
+	width: 0;
+	opacity: 0;
+	transition: all .3s;
 }
 .blog-s-header__title {
 	font-size: 36px;
@@ -4944,6 +4968,8 @@ padding: 25px 35px 21px;
 	display: block;
 	width: 100%;
 	height: 100%;
+	object-fit: cover;
+	border-radius: 7px;
 }
 
 .gallery__photo:nth-child(1) {
@@ -4985,7 +5011,7 @@ padding: 25px 35px 21px;
 .gallery .slick-dots {
 	position: absolute;
 	top: 5px;
-	left: -65px;
+	left: -60px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -5047,7 +5073,7 @@ padding: 25px 35px 21px;
 	background: rgba(0, 0, 0, 0.25);
 	border-radius: 7px;
 	width: 100%;
-	height: 100%;
+	height: 98%;
 }
 .gallery__video-item {
 	position: relative;
@@ -5084,6 +5110,7 @@ padding: 25px 35px 21px;
 	width: 1409px;
 	max-width: 100%;
 	margin: 0 auto;
+	text-align: left;
 }
 .gallery-tabs__items{
 	display: flex;
@@ -5124,8 +5151,59 @@ padding: 25px 35px 21px;
 	-webkit-animation-duration: 1.5s;
 	animation-duration: 1.5s;
 }
+.gallery__video-img{
+	border-radius: 7px;
+	object-fit: cover;
+	width: 100%;
+}
 
 /* Media */
+@media (max-width: 1200px) {
+	.gallery__photo-item {
+		grid-template-rows: repeat(3, 200px);
+	}
+}
+
+@media (max-width: 1100px) {
+	.gallery__photo-item {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+@media (max-width: 768px) {
+	.gallery__photo-item {
+		margin-top: 43px;
+		padding-left: 0;
+		grid-template-rows: auto;
+		grid-template-columns: 330px;
+	}
+	.gallery .slick-dots{
+		top: auto;
+		bottom: -63px;
+		flex-direction: row;
+		column-gap: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.gallery__video-slider .slick-dots {
+		
+		bottom: 3px;
+		
+	}
+	
+}
+@media screen and (max-width: 1560px) {
+	.gallery__video-bg {
+			background: #F7F8F9;
+			padding: 33px 0px 37px 71px;
+			width: 100%;
+	}
+	.gallery__photo-bg{
+		padding-left: 71px;
+	}
+
+	
+}
 @media screen and (max-width: 1441px) {
 	.about-tree .container{
 		width: 1420px;
@@ -5878,8 +5956,42 @@ padding: 25px 35px 21px;
 	.cart__mobile{
 		display: none;
 	}
+	.gallery__mobile-content{
+		display: none;
+	}
 }
 @media screen and (max-width: 767px) {
+	.gallery__mobile-content{
+		padding: 0 15px;
+	}
+	.gallery__title-search-inner{
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+		row-gap: 30px;
+	}
+	.gallery__mobile-content {
+			display: block;
+	}
+	.gallery-main{
+		overflow: hidden;
+	}
+	.gallery__video-inner{
+		flex-direction: column;
+		row-gap: 15px;
+		margin-top: 40px;
+		margin-bottom: 70px;
+	}
+	.gallery__video-bg {
+			padding: 0 15px;
+	}
+	
+	.gallery__photo-bg {
+		padding: 0 15px;
+	}
+	.gallery__desktop-content{
+		display: none;
+	}
 	.cart{
 		display: none;
 	}
