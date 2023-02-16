@@ -567,6 +567,7 @@ try {
 	radioInput.addEventListener("change", () => {
 		console.log(radioInput)
 		if (radioInput.checked) {
+			console.log(orderBlock.classList)
 			orderBlock.classList.add("order__block-fade")
 			// item.style.display = "none"
 		} else {
@@ -616,6 +617,18 @@ try {
 	const wrapServicesText3 = document.querySelector(
 		'.cart-item__body-wrap[data="3"]'
 	)
+	const btnCollection4 = document.querySelector(
+		'.cart-item__btn-wrap[data="4"]'
+	)
+	const wrapServicesText4 = document.querySelector(
+		'.cart-item__body-wrap[data="4"]'
+	)
+	const btnCollection5 = document.querySelector(
+		'.cart-item__btn-wrap[data="5"]'
+	)
+	const wrapServicesText5 = document.querySelector(
+		'.cart-item__body-wrap[data="5"]'
+	)
 	const textPlug = document.querySelectorAll(".cart__item-delete")
 	// console.log(btnCollection2)
 
@@ -637,17 +650,43 @@ try {
 	}
 	btnCollection.addEventListener("click", (e, i) => {
 		const num = +btnCollection.getAttribute("data") - 1
-		console.log(num)
+		console.log("find")
 		addServicesText(e, wrapServicesText, num)
 	})
 	btnCollection2.addEventListener("click", (e, i) => {
 		const num = +btnCollection2.getAttribute("data") - 1
-		console.log(num)
+
 		addServicesText(e, wrapServicesText2, num)
 	})
 	btnCollection3.addEventListener("click", (e, i) => {
 		const num = +btnCollection3.getAttribute("data") - 1
 		addServicesText(e, wrapServicesText3, num)
+	})
+	btnCollection4.addEventListener("click", (e, i) => {
+		const num = +btnCollection4.getAttribute("data") - 1
+		addServicesText(e, wrapServicesText4, num)
+	})
+	btnCollection5.addEventListener("click", (e, i) => {
+		const num = +btnCollection5.getAttribute("data") - 1
+		addServicesText(e, wrapServicesText5, num)
+	})
+} catch (e) {
+	console.log(e)
+}
+
+// Toggle filter mobile
+try {
+	const filterBtn = document.querySelector(".block__title-filter")
+	const filter = document.querySelector(".catalog__filter")
+	filterBtn.addEventListener("click", () => {
+		console.log(filter.classList.value.slice(-12) == "filter__fade")
+		if (filter.classList.value.slice(-12) == "filter__fade") {
+			filter.classList.add("filter__show")
+			filter.classList.remove("filter__fade")
+		} else {
+			filter.classList.remove("filter__show")
+			filter.classList.add("filter__fade")
+		}
 	})
 } catch (e) {
 	console.log(e)
