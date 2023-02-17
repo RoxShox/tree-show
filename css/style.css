@@ -6943,6 +6943,9 @@ padding: 25px 35px 21px;
 		font-size: 13px;
 		height: 44%;
 	}
+	.cart-item__btn{
+		max-width: 128px;
+	}
 }
 
 .banner-main {
