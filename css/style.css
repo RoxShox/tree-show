@@ -5986,6 +5986,9 @@ padding: 25px 35px 21px;
 		display: none;
 		position: relative;
 	}
+	.product__tabs::before{
+		display: none;
+	}
 	
 	.cart__mobile{
 		display: none;
