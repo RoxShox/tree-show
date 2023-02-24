@@ -2609,6 +2609,20 @@ button.btn-green {
 .tabs__menu-wrap {
 	overflow-x: scroll;
 	width: 100%;
+	position: relative;
+}
+.product__tabs{
+	position: relative;
+}
+.product__tabs::before{
+	content: '';
+	position: absolute;
+	width: 14px;
+	height: 8px;
+	background-image: url(../img/arrow-catalog-item.svg);
+	top: 25px;
+	right: 6px;
+
 }
 .sesingle__gallery-item img {
 	position: absolute;
@@ -6345,9 +6359,11 @@ padding: 25px 35px 21px;
 	}
 
 	.footer__top-right {
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
+		
 		text-align: center;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		
 	}
 	.footer__top-col {
 		width: 100%;
